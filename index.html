@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Snake Game</title>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"> -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="start collection">
+    <ul id="list-group">
+      <li class="list-item"> <span class="noActive active">Start</span> </li>
+      <li class="list-item "> <span class="levelLeft"><</span> <span data-level="Normal" class="noActive level">Normal</span>  <span class="levelRight">></span></li>
+      <li class="list-item"><span class="noActive">High Scores</span> </li>
+      <li class="list-item"><span class="noActive">Change Player</span> </li>
+      <li class="list-item"><span class="noActive">Credits</span></li>
+      
+    </ul>
+  </div> 
+  <div class="game" style="display: none">
+    <span id="message"></span>
+    <span id="scorePlaceholder">0</span>
+    <canvas id="mgh" width="900" height="900" style="border: 1px solid red"></canvas>
+  </div> 
+  <div class="highScores" style="display: none">
+    <table id="tabelScore"  >
+      <tr>
+        <th>Name</th>
+        <th>Score</th>
+      </tr>
+
+    </table>
+    <button class="back">Back</button>
+    
+  </div>
+  <!-- <div class="score">
+    <h3>Your score is</h3>
+    <h2 id="scorePlaceholder">0</h2>
+  </div> -->
+  <div class="changePlayer" style="display: none">
+    <h2>Please Chose Player</h2>
+    <ul class="players">
+    </ul>
+    <input type="text" id="playerName">
+    <button id="addPlayer">Add New Player</button>
+    <button class="savePlayer">Save</button>
+    <button class="back">Back</button>    
+  </div>
+  <div class="credits" style="display: none;">
+    <ul>
+      <li>
+        <h2><a href="https://github.com/hovoaep">Author: Hovhannes Sargsyan</a> </h2>
+      </li>
+      <li>
+        <h2><a href="#">Curator: Eduard Hovhannisyan</a> </h2>
+      </li>
+      <li>
+        <h2><a href="https://github.com/Marybbj">Spacel Thx: Mary Babajanyan</a> </h2>
+      </li>
+    </ul>
+    <button class="back">Back</button>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>  
+  <!-- <script src="script/canvas-long-shadow.min.js"></script> -->
+  <!-- <script src="script/canvas-long-shadow.min.js"></script> -->
+  <!-- <script src="script/longShadow.js"></script>   -->
+  <script src="script/main.js"></script>
+  <script src="script/playerConfig.js"></script>
+  <!-- <script id="ext"></script> -->
+</body> 
+</html>
