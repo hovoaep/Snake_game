@@ -1,5 +1,3 @@
-// Eduard jan qnum em lav mna, mi qani ban chi stacvel, harcer unem, 
-// p.s. shokolads cmoarnas :PPP
 
 
 function Game(){
